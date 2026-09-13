@@ -46,9 +46,12 @@
     <div class="container page">
       <div class="row article-content">
         <div class="col-md-12">
-          <div [innerHTML]="article.body | markdown | async"></div>
+          <div
+            data-testid="article-body"
+            [innerHTML]="article.body | markdown | async"
+          ></div>
 
-          <ul class="tag-list">
+          <ul class="tag-list" data-testid="article-tags">
             @for (tag of article.tagList; track tag) {
               <li class="tag-default tag-pill tag-outline">
                 {{ tag }}

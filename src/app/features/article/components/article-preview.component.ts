@@ -8,7 +8,7 @@ import { FavoriteButtonComponent } from "./favorite-button.component";
 @Component({
   selector: "app-article-preview",
   template: `
-    <div class="article-preview">
+    <div class="article-preview" data-testid="article-preview">
       <app-article-meta [article]="article">
         <app-favorite-button
           [article]="article"
