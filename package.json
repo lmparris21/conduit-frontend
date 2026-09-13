@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint --force",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "engines": {
     "node": "^18.13.0 || ^20.9.0"
@@ -34,8 +36,11 @@
     "@angular-devkit/build-angular": "^18.0.0",
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "18.0.0",
+    "@playwright/test": "^1.63.0",
     "@types/jasmine": "~4.3.0",
     "@types/marked": "^6.0.0",
+    "@types/node": "^26.5.1",
+    "dotenv": "^17.4.2",
     "husky": "^8.0.3",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.1",

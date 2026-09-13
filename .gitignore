@@ -46,3 +46,15 @@ Thumbs.db
 
 # Ignore generated credentials from google-github-actions/auth
 gha-creds-*.json
+
+# Playwright
+playwright-utils/.auth/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Local env files (keep .env.test.example committed)
+.env
+.env.local
+.env.test.*
+!.env.test.example
