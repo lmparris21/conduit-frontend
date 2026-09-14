@@ -10,7 +10,7 @@ import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
   selector: "app-article-comment",
   template: `
     @if (comment) {
-      <div class="card">
+      <div class="card" data-testid="comment-card">
         <div class="card-block">
           <p class="card-text">
             {{ comment.body }}
@@ -34,7 +34,7 @@ import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
             {{ comment.createdAt | date: "longDate" }}
           </span>
           @if (canModify$ | async) {
-            <span class="mod-options">
+            <span class="mod-options" data-testid="comment-delete-button">
               <i class="ion-trash-a" (click)="delete.emit(true)"></i>
             </span>
           }

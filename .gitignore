@@ -52,6 +52,7 @@ playwright-utils/.auth/
 test-results/
 playwright-report/
 playwright/.cache/
+.pw-ci-debug/
 
 # Local env files (keep .env.test.example committed)
 .env
