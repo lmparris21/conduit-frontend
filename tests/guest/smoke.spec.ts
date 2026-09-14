@@ -11,7 +11,7 @@ test.describe("Guest smoke", () => {
 
   test("Home page displays tagline", async ({ page }) => {
     await expect(
-      page.getByText("A place to share your knowledge."),
+      page.getByText("A place to learn and practice test automation."),
     ).toBeVisible();
   });
 });
